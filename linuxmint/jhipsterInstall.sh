@@ -13,12 +13,17 @@
 # python
 sudo apt-get -y install python-software-properties
 
-# 1 : suppose Java already installed
+# 1 : install Java8
+sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get -y update
+sudo apt-get -y install oracle-java8-installer
+sudo apt-get -y install oracle-java8-set-default
 
 # 2 : install maven
 sudo apt-get -y install maven
 
-# 3 : git already installed
+# 3 : install git
+sudo apt-get -y install git
 
 # 4 : install nodeJs
 sudo add-apt-repository ppa:chris-lea/node.js -y
@@ -40,4 +45,7 @@ sudo npm install -g gulp
 
 # 8 : install generator-jhipster
 sudo npm install -g generator-jhipster
+
+# fix error npm : https://github.com/npm/npm/issues/4815
+sudo chown -R `whoami` ~/.npm
 

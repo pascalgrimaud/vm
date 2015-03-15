@@ -4,6 +4,6 @@
 sudo apt-get -y update
 
 # install differents tools
-sudo apt-get -y install vim subversion curl putty
+sudo apt-get -y install vim git subversion curl putty
 
 
